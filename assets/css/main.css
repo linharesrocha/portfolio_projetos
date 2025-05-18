@@ -1590,7 +1590,7 @@ button,
     margin: 0 0 1.5em 0; }
     .mini-posts article .image img {
       display: block;
-      width: 100%; }
+      width: 50%; height: auto; }
   .mini-posts article:first-child {
     border-top: 0;
     margin-top: 0;
