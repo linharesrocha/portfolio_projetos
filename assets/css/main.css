@@ -2050,6 +2050,10 @@ button,
       body.is-preload #sidebar {
         display: none; } }
   @media screen and (max-width: 736px) {
+    #banner .image img {
+      height: auto!important;
+      width: 100%!important;
+    }
     #sidebar .toggle {
       text-indent: 7.25em;
       width: 7.25em; }
@@ -2148,7 +2152,7 @@ button,
       -webkit-object-position: center;
       -ms-object-position: center;
       object-position: center;
-      width: 100%; }
+      width: 500px; }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
@@ -2166,6 +2170,7 @@ button,
         -webkit-flex-shrink: 0;
         -ms-flex-shrink: 0;
         flex-shrink: 0;
+        margin-top: 150px;
         width: 100%; }
       #banner .image {
         -moz-flex-grow: 0;
