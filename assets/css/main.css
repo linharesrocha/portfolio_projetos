@@ -1772,7 +1772,8 @@ button,
       margin: 0 0 2em 0; }
       .posts article .image img {
         display: block;
-        width: 100%; }
+        width: 60%;
+        margin: auto; }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
@@ -2099,6 +2100,9 @@ button,
     #header {
       padding-top: 5em; } }
   @media screen and (max-width: 736px) {
+    #banner h1 {
+      margin-top: 1px!important;
+    }
     #header {
       padding-top: 6.5em; }
       #header .logo {
@@ -2119,7 +2123,7 @@ button,
   display: -ms-flex;
   display: flex; }
   #banner h1 {
-    margin-top: -0.125em; }
+    margin-top: 9rem; }
   #banner .content {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
@@ -2152,7 +2156,8 @@ button,
       -webkit-object-position: center;
       -ms-object-position: center;
       object-position: center;
-      width: 500px; }
+      width: 400px;
+    border-radius: 50px; }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
