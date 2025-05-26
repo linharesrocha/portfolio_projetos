@@ -19,7 +19,7 @@
 					<p class="logo"><strong>Portfólio de Projetos</strong> de Engenharia de Software</p>
 				</header>
 
-				<section id="banner">
+				<section id="banner" style="margin: auto;">
 					<div class="content">
 						<header>
 							<h1>Olá, seja muito bem-vindo(a) ao meu portfólio!</h1>
@@ -29,18 +29,6 @@
 						<img src="images/me.jpg" alt="Engenharia de Software" />
 					</span>
 				</section>
-
-				<section>
-					<header class="main">
-						<h1>Sobre mim</h1>
-					</header>
-
-					<h2 id="content">Meu nome é Guilherme Linhares</h2>
-					<h3>Sou um Engenheiro de Software com foco em desenvolvimento backend utilizando Java e o ecossistema Spring. Atualmente, trabalho como Software Engineer na Lamas Destilaria e estou cursando Sistemas de Informação na Pontifícia Universidade Católica de Minas Gerais.</h3>
-					<h3>Minha trajetória inclui experiência na criação de APIs RESTful e na aplicação de arquiteturas de microsserviços, sempre buscando as melhores práticas de desenvolvimento como Clean Code, SOLID e TDD.</h3>
-					<h3>Estou constantemente aprendendo e explorando novas tecnologias, com interesse particular em sistemas distribuídos, mensageria (Kafka, RabbitMQ), containerização (Docker) e orquestração (Kubernetes), além de familiaridade com serviços AWS. Busco oportunidades para aplicar e expandir meus conhecimentos na construção de soluções de software inovadoras e eficientes.</h3>
-				</section>
-
 				<section>
 					<header class="main">
 						<h1>Habilidades Técnicas</h1>
@@ -93,7 +81,8 @@
 							</div>
 						</article>
 						<article>
-							<span class="icon solid fa-shield-alt"></span> <div class="content">
+							<span class="icon solid fa-shield-alt"></span>
+							<div class="content">
 								<h3>Qualidade e Boas Práticas</h3>
 								<ul>
 									<li>Testes Unitários (JUnit, Mockito)</li>
@@ -119,25 +108,44 @@
 					</div>
 				</section>
 
-								<section>
+				<section>
 					<header class="main">
-						<h1>Projetos em Destaque</h1>
+						<h1>Projeto em Destaque</h1>
 					</header>
 					<div class="posts">
 						<article>
-							<a href="https://github.com/linharesrocha/todo-microservices-portfolio" class="image" target="_blank"><img src="images/microservices_project.jpg" alt="Projeto Microserviços To-Do" /></a> <h3>Ecossistema de Microsserviços To-Do & Notificações</h3>
-							<p>Este projeto demonstra um sistema de gerenciamento de tarefas construído com Java, Spring Boot, Docker e Kubernetes (local). Inclui um `todo-service` para o CRUD de tarefas e um `notification-service` que consome eventos de forma assíncrona via RabbitMQ.</p>
-							<h4>Tecnologias e Conceitos Demonstrados:</h4>
+							<a href="https://github.com/linharesrocha/parking-management-system" class="image"
+								target="_blank"><img src="images/parking.png"
+									alt="Sistema Inteligente de Gerenciamento de Vagas" /></a>
+							<b>
+								<h2 style="font-weight: 500;">Sistema Inteligente de Gerenciamento de Vagas e Precificação Dinâmica</h2>
+							</b>
+
+							<p>Um backend para gerenciar estacionamentos de forma autônoma, processando <b>dados de
+									sensores</b> em tempo real (simulando um ambiente
+								IoT) para otimizar a ocupação e o faturamento. O sistema reage dinamicamente a eventos
+								de entrada, estacionamento e saída de veículos, aplicando precificação adaptativa e
+								controle de capacidade dos setores.
+							</p>
+							<h4 style="font-weight: 500;">Destaques Técnicos e Capacidades Demonstradas:</h4>
 							<ul>
-								<li>Java 21, Spring Boot 3.x (Web, Data JPA, AMQP)</li>
-								<li>PostgreSQL, RabbitMQ</li>
-								<li>Docker, Docker Compose</li>
-								<li>Kubernetes (Deployments, Services, ConfigMaps, Secrets)</li>
-								<li>APIs RESTful, DTOs, Validação, OpenAPI</li>
-								<li>Comunicação Assíncrona</li>
+								<li>Processamento de fluxos de eventos assíncronos (simulando dados de sensores IoT
+									via webhooks).</li>
+								<li>Java 21, Spring Boot 3.x (Web, Data JPA, Validation, Actuator)</li>
+								<li>PostgreSQL (Dockerizado)</li>
+								<li>Docker, Docker Compose (orquestração do app, DB e simulador)</li>
+								<li>Arquitetura Limpa (aplicação dos princípios para separação de camadas)</li>
+								<li>APIs RESTful (design, versionamento, DTOs)</li>
+								<li>Springdoc OpenAPI (documentação interativa)</li>
+								<li>Tratamento Global de Exceções (@RestControllerAdvice)</li>
+								<li>Integração com Simulador Externo (consumo de API e recepção de Webhooks)</li>
+								<li>Testes Unitários (JUnit 5 & Mockito) para lógica de serviço.</li>
+								<li>Logging Estruturado e Gitflow.</li>
+							</ul>
 							</ul>
 							<ul class="actions">
-								<li><a href="https://github.com/linharesrocha/todo-microservices-portfolio" class="button" target="_blank">Ver no GitHub</a></li>
+								<li><a href="https://github.com/linharesrocha/parking-management-system" class="button"
+										target="_blank">Explorar no GitHub</a></li>
 							</ul>
 						</article>
 						<!-- <article>
@@ -153,10 +161,10 @@
 								<li><a href="#" class="button">Saiba Mais (Link para o projeto)</a></li>
 							</ul>
 						</article> -->
-						</div>
+					</div>
 				</section>
 
-				<section>
+				<section class="experiencies">
 					<header class="main">
 						<h1>Experiências Profissionais</h1>
 					</header>
@@ -181,16 +189,21 @@
 					</article>
 				</section>
 
-				<section>
+				<section class="contactinfo">
 					<header class="main">
 						<h1>Contatos</h1>
 					</header>
-					<h3>Sinta-se à vontade para entrar em contato.</h3>
+					<h3 style="font-size: 1.2rem;">Sinta-se à vontade para entrar em contato.</h3>
 					<ul class="contact">
-						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/guilhermelinhares/" target="_blank">LinkedIn</a></li> <li class="icon brands fa-github"><a href="https://github.com/linharesrocha" target="_blank">GitHub</a></li>
-						<li class="icon solid fa-at"><a href="mailto:guilhermelinharesr@gmail.com">guilhermelinharesr@gmail.com</a></li>
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/guilhermelinhares/"
+								target="_blank">LinkedIn</a></li>
+						<li class="icon brands fa-github"><a href="https://github.com/linharesrocha"
+								target="_blank">GitHub</a></li>
+						<li class="icon solid fa-at"><a
+								href="mailto:guilhermelinharesr@gmail.com">guilhermelinharesr@gmail.com</a></li>
 						<li class="icon solid fa-phone">(31) 98962-0719</li>
-                        <li class="icon solid fa-globe"><a href="https://guilhermelinhares.com.br" target="_blank">guilhermelinhares.com.br</a></li>
+						<li class="icon solid fa-globe"><a href="https://guilhermelinhares.com.br"
+								target="_blank">guilhermelinhares.com.br</a></li>
 					</ul>
 				</section>
 			</div>
