@@ -114,53 +114,43 @@
 					</header>
 					<div class="posts">
 						<article>
-							<a href="https://github.com/linharesrocha/parking-management-system" class="image"
-								target="_blank"><img src="images/parking.png"
-									alt="Sistema Inteligente de Gerenciamento de Vagas" /></a>
+							<a href="https://github.com/linharesrocha/EasyLink" class="image" target="_blank"><img
+									src="https://raw.githubusercontent.com/linharesrocha/EasyLink/refs/heads/main/easylink-service/src/main/resources/static/logo.png"
+									alt="EasyLink - Encurtador de URLs com Microsserviços" /></a>
 							<b>
-								<h2 style="font-weight: 500;">Sistema Inteligente de Gerenciamento de Vagas e Precificação Dinâmica</h2>
+								<h2 style="font-weight: 500; text-align: center;">EasyLink: Encurtador de URLs</h2>
 							</b>
 
-							<p>Um backend para gerenciar estacionamentos de forma autônoma, processando <b>dados de
-									sensores</b> em tempo real (simulando um ambiente
-								IoT) para otimizar a ocupação e o faturamento. O sistema reage dinamicamente a eventos
-								de entrada, estacionamento e saída de veículos, aplicando precificação adaptativa e
-								controle de capacidade dos setores.
+							<p>
+								Plataforma para encurtamento de URLs em Microserviços. <br><br>
+								- Registro e login de usuários via JWT <br>
+								- Criação, edição e exclusão de links associados a cada usuário <br>
+								- Redirecionamento otimizado com cache <br>
+								- Geração de QR Code para cada link. <br>
 							</p>
-							<h4 style="font-weight: 500;">Destaques Técnicos e Capacidades Demonstradas:</h4>
+							<h3 style="font-weight: 500;">Tecnologias e Metodologias:</h3>
 							<ul>
-								<li>Processamento de fluxos de eventos assíncronos (simulando dados de sensores IoT
-									via webhooks).</li>
-								<li>Java 21, Spring Boot 3.x (Web, Data JPA, Validation, Actuator)</li>
-								<li>PostgreSQL (Dockerizado)</li>
-								<li>Docker, Docker Compose (orquestração do app, DB e simulador)</li>
-								<li>Arquitetura Limpa (aplicação dos princípios para separação de camadas)</li>
-								<li>APIs RESTful (design, versionamento, DTOs)</li>
-								<li>Springdoc OpenAPI (documentação interativa)</li>
-								<li>Tratamento Global de Exceções (@RestControllerAdvice)</li>
-								<li>Integração com Simulador Externo (consumo de API e recepção de Webhooks)</li>
-								<li>Testes Unitários (JUnit 5 & Mockito) para lógica de serviço.</li>
-								<li>Logging Estruturado e Gitflow.</li>
-							</ul>
+								<li><b>Arquitetura e Padrões:</b> Microsserviços, Arquitetura Orientada a Eventos,
+									Arquitetura Limpa (Ports & Adapters), API Gateway, Service Discovery e Circuit
+									Breaker.</li>
+								<li><b>Backend:</b> Java 21, Spring Boot 3, Spring Cloud, Spring Security e Spring Data
+									JPA.</li>
+								<li><b>Persistência:</b> Bancos de Dados Poliglotas com PostgreSQL (dados de
+									usuários/links), MongoDB (dados de analytics) e Redis (cache para redirecionamento).
+								</li>
+								<li><b>Mensageria:</b> Apache Kafka para comunicação assíncrona de eventos de clique.
+								</li>
+								<li><b>Autenticação:</b> Segurança baseada em Token com JWT (JSON Web Token).</li>
+								<li><b>DevOps e Ferramentas:</b> Docker e Docker Compose para orquestração de
+									contêineres, Maven como gerenciador de dependências.</li>
+								<li><b>Testes e Documentação:</b> Testes unitários com JUnit 5 & Mockito, documentação
+									de API com Springdoc OpenAPI (Swagger).</li>
 							</ul>
 							<ul class="actions">
-								<li><a href="https://github.com/linharesrocha/parking-management-system" class="button"
+								<li><a href="https://github.com/linharesrocha/EasyLink" class="button"
 										target="_blank">Explorar no GitHub</a></li>
 							</ul>
 						</article>
-						<!-- <article>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-							<h3>Seu Próximo Projeto Incrível</h3>
-							<p>Espaço reservado para outro projeto de destaque do seu portfólio. Descreva o problema de negócio, a solução desenvolvida e as tecnologias utilizadas.</p>
-							<h4>Tecnologias que poderiam ser utilizadas:</h4>
-							<ul>
-								<li>Exemplo: Python, Django, React, AWS Lambda, etc.</li>
-								<li>Ou: Java, Spring Batch, Kafka Streams, etc.</li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button">Saiba Mais (Link para o projeto)</a></li>
-							</ul>
-						</article> -->
 					</div>
 				</section>
 
